@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="src/index.css"></script>
     <script src="src/eventHandlers.js" charset="utf-8"></script>
     <script src="src/giftData.js" charset="utf-8"></script>
-    <script src="src/index.js" charset="utf-8"></script>
+    <script src="src/index.js" charset="utf-8" defer></script>
     <title>DOM Crud Practice Giftr™</title>
   </head>
   <body>
@@ -37,6 +37,7 @@
           <!-- CODE FOR NEW GIFT FORM -->
           <form id="gift-form" class="ui form" action="index.html" method="POST">
             <label for="name">Gift Name: </label>
+            <input id="gift-id-input" type="text" name="id" value="" hidden>
             <input id="gift-name-input" type="text" name="name" value="">
             <label for="image">Gift Image: </label>
             <input id="gift-image-input" type="text" name="image" value="">
