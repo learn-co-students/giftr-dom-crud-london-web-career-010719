@@ -1,4 +1,4 @@
-const gifts = [
+let gifts = [ // should be created by 'let' for delete function(which is using .filter()).
   {
     id: 1,
     name: '8 pairs of socks',
@@ -21,3 +21,4 @@ const gifts = [
     image: 'https://cdn.shopify.com/s/files/1/2086/9287/products/LAstdabReduxx_1024x1024-1_1024x1024.jpg?v=1527778720'
   }
 ]
+
