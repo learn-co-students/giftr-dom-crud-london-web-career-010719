@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
     <link rel="stylesheet" href="src/index.css"></script>
-    <script src="src/eventHandlers.js" charset="utf-8"></script>
-    <script src="src/giftData.js" charset="utf-8"></script>
-    <script src="src/index.js" charset="utf-8"></script>
     <title>DOM Crud Practice Giftr™</title>
   </head>
   <body>
@@ -36,6 +33,7 @@
 
           <!-- CODE FOR NEW GIFT FORM -->
           <form id="gift-form" class="ui form" action="index.html" method="POST">
+            <input type="hidden" name="" id="gift-edit-id">
             <label for="name">Gift Name: </label>
             <input id="gift-name-input" type="text" name="name" value="">
             <label for="image">Gift Image: </label>
@@ -51,16 +49,17 @@
       <div class="row">
         <div class="two wide column"></div>
         <div class="ui raised very padded text container segment">
-
+          <h3>Gifts:</h3>
+          <ul id="gifts-ul">
           <!-- CODE FOR LIST OF GIFTS -->
-          <ul class="gift-list">
-            <li>No gifts yet :(</li>
-          </ul>
+          
           <!-- ENDCODE FOR LIST OF GIFTS -->
-
+          </ul>
         </div>
         <div class="two wide column"></div>
       </div>
     </div>
+    <script src="src/giftData.js" charset="utf-8"></script>
+    <script src="src/index.js" charset="utf-8"></script>
   </body>
 </html>
